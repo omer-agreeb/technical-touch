@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: omer
+  password: omer
+  host: localhost
+
+development:
+  <<: *default
+  database: technical_touch_development_data
+
+test:
+  <<: *default
+  database: technical_touch_test_data
+
+production:
+  <<: *default
+  database: technical_touch_production_data
+  username: technical_touch
+  password: <%= ENV['TECHNICAL_TOUCH_DATABASE_PASSWORD'] %>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TechnicalTouch</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Custom styles for this template -->
+    <script src="https://kit.fontawesome.com/e4a7722b38.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <%= render "layouts/constants/navbar" %>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
+    <%= render "layouts/constants/footer" %>
+  </body>
+</html>
