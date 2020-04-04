@@ -18,9 +18,10 @@
   </head>
   <body>
     <%= render "layouts/constants/navbar" %>
-    
+    <%= render "layouts/constants/flash" %>
     <div class="container-fluid">
       <%= yield %>
+      <%= render "layouts/constants/paginate" %>
     </div>
     <%= render "layouts/constants/footer" %>
   </body>
